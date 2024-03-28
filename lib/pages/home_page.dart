@@ -20,6 +20,10 @@ class HomePage extends StatelessWidget {
                 child: const Text('table'),
                 onPressed: () => Navigator.pushNamed(context, '/table'),
           ),
+              MenuItemButton(
+                  child: const Text('stack'),
+                  onPressed: () => Navigator.pushNamed(context, '/stack'),
+              )
         ]),
       ])),
     );
