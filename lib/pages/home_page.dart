@@ -27,6 +27,10 @@ class HomePage extends StatelessWidget {
           MenuItemButton(
             child: const Text('clip'),
             onPressed: () => Navigator.pushNamed(context, '/clip'),
+          ),
+          MenuItemButton(
+            child: const Text('notify'),
+            onPressed: () => Navigator.pushNamed(context, '/notify'),
           )
         ]),
       ])),
