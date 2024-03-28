@@ -11,19 +11,23 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
           child: Column(children: [
-            MenuBar(children: [
-              MenuItemButton(
-                child: const Text('gridview'),
-                onPressed: () => Navigator.pushNamed(context, '/gridview'),
-              ),
-              MenuItemButton(
-                child: const Text('table'),
-                onPressed: () => Navigator.pushNamed(context, '/table'),
+        MenuBar(children: [
+          MenuItemButton(
+            child: const Text('gridview'),
+            onPressed: () => Navigator.pushNamed(context, '/gridview'),
           ),
-              MenuItemButton(
-                  child: const Text('stack'),
-                  onPressed: () => Navigator.pushNamed(context, '/stack'),
-              )
+          MenuItemButton(
+            child: const Text('table'),
+            onPressed: () => Navigator.pushNamed(context, '/table'),
+          ),
+          MenuItemButton(
+            child: const Text('stack'),
+            onPressed: () => Navigator.pushNamed(context, '/stack'),
+          ),
+          MenuItemButton(
+            child: const Text('clip'),
+            onPressed: () => Navigator.pushNamed(context, '/clip'),
+          )
         ]),
       ])),
     );
